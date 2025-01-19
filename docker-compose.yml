@@ -1,0 +1,63 @@
+
+services:
+  user-service:
+    build:
+      context: ./user-service
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+    depends_on:
+      - product-service
+      - order-service
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  product-service:
+    build:
+      context: ./product-service
+    ports:
+      - "3001:3001"
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  order-service:
+    build:
+      context: ./order-service
+    ports:
+      - "3002:3002"
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3002/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  gateway-service:
+    build:
+      context: ./gateway-service
+    ports:
+      - "3003:3003"
+    networks:
+      - app-network
+    depends_on:
+      - user-service
+      - product-service
+      - order-service
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3003/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+networks:
+  app-network:
