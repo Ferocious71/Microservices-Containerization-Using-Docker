@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/83f6a1d7-f535-4e4f-9381-4a8528bfce81)# Microservices-Containerization-Using-Docker
+# Microservices-Containerization-Using-Docker
 
 # Objective
 Create a containerized microservices application using Node.js, Docker, and Docker Compose.
@@ -42,7 +42,7 @@ Create a docker-compose.yml file that:
 ![image](https://github.com/user-attachments/assets/246535fe-fc13-4502-b053-ce0728abbeb2)
 
 ![image](https://github.com/user-attachments/assets/98197d8d-7b32-42f6-a0a2-38ae6480e8a8)
-
+![image](https://github.com/user-attachments/assets/83f6a1d7-f535-4e4f-9381-4a8528bfce81)
 
 
 
