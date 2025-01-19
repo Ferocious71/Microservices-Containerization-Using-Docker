@@ -5,10 +5,10 @@ Create a containerized microservices application using Node.js, Docker, and Dock
 
 # Task Description
 You are provided with the source code for four Node.js microservices:
-# User Service (Port 3000)
-# Product Service (Port 3001)
-# Order Service (Port 3002)
-# Gateway Service (Port 3003)
+User Service (Port 3000)
+Product Service (Port 3001)
+Order Service (Port 3002)
+Gateway Service (Port 3003)
 Your task is to containerize these services and set up a Docker Compose configuration to run them together.
 
 # Requirements
