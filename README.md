@@ -12,7 +12,7 @@ Gateway Service (Port 3003)
 Your task is to containerize these services and set up a Docker Compose configuration to run them together.
 
 # Requirements
-# 1. Dockerfile Creation
+ 1. Dockerfile Creation
 Each Dockerfile must:
   a. Use an appropriate base image
   b. Set up the working directory
@@ -20,16 +20,16 @@ Each Dockerfile must:
   d. Configure the correct port
   e. Use proper CMD instructions
 
-# 2. Docker Compose Configuration 
+2. Docker Compose Configuration 
 Create a docker-compose.yml file that:
   a. Defines all four services 
   b. Sets up correct port mappings 
   c. Establishes service dependencies 
   d. Configures networking between services 
 
-# 3. Deploy application on EC2 instance 
+ 3. Deploy application on EC2 instance 
 
-# PFB screenshots for reference - 
+PFB screenshots for reference - 
 
 ![image](https://github.com/user-attachments/assets/56e991ca-5324-4c9d-bbe1-abb5d9733c29)
 
